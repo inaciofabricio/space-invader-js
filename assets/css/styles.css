@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", sans-serif;
+    user-select: none;
+}
+
+canvas {
+    background-color: #121212;
+}
+
+.screen {
+    width: 100%;
+    height: 100dvh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    gap: 50px;
+}
+
+.screen h1 {
+    font-size: 2rem;
+}
+
+.screen h2 {
+    font-size: 1.5rem;
+    color: bisque;
+    text-decoration: none;
+}
+
+#newRecordValue {
+    font-size: 3rem;
+    color: coral;
+    text-decoration: none;
+}
+
+.screen span {
+    font-size: 0.6rem;
+    color: #aaa;
+    margin-top: auto;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.start-screen > div {
+    margin-top: auto;
+}
+
+.start-screen > div > h1 {
+    margin-top: 150px;
+}
+
+.start-screen > div > button {
+    margin-top: 30px;
+}
+
+.button-play,
+.button-restart {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #ddd;
+    display: block;
+    margin: 20px auto 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button-play:hover,
+.button-restart:hover {
+    background-color: #fff;
+}
+
+.game-over {
+    scale: 0;
+    animation: zoom 2s ease-in-out forwards;
+}
+
+.score-ui {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: none;
+}
+
+.score-ui > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.move {
+    display: flex;
+    gap: 25px;
+}
+
+.move span {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.textTiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagesLeft {
+    display: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.imagesLeft img {
+    position: absolute;
+    transform: rotate(-15deg);
+}
+
+.imagesRight {
+    display: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.imagesRight img {
+    position: absolute;
+    transform: rotate(15deg);
+}
+
+.tiro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+@keyframes zoom {
+    from {
+        scale: 0;
+    }
+
+    to {
+        scale: 1;
+    }
+}

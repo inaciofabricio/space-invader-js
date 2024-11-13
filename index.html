@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <section class="score-ui">
+        <div>
+            <span class="score">
+                score: <span>0</span>
+            </span>
+            <span class="level">
+                level: <span>1</span>
+            </span>
+            <span class="high">
+                high: <span>0</span>
+            </span>
+        </div>
+    </section>
+
+    <section class="start-screen screen">
+        <div>
+            <h1>Space Invaders</h1>
+            <button class="button-play">Play</button>
+        </div>
+        
+        <div class="tutorial">
+            <div class="move">
+                <div class="imagesLeft">
+                    <img src="assets/images/spaceship.png">
+                    <img src="assets/images/engine.png">
+                </div>
+                <span>Mover para ESQUERDA: "A" ou "<-"</span>
+            </div>
+            <div class="move">
+                <div class="imagesRight">
+                    <img src="assets/images/spaceship.png">
+                    <img src="assets/images/engine.png">
+                </div>
+                <span>Mover para DIREITA: "D" ou "->"</span>
+            </div>
+            <div class="move">
+                <div class="tiro">
+                    <span>|</span>
+                </div>
+                <div class="textTiro">
+                    <span>Para ATIRAR: "Enter", "Espaço"</span>
+                    <span>ou "Clique Direito do Mouse"</span>
+                </div>
+            </div>
+        </div>
+        <span>Space Invaders</span>
+    </section>
+
+    <section class="game-over screen">
+        <div>
+            <h1>Game Over</h1>
+            <button class="button-restart">Restart</button>
+        </div>
+        <div id="newRecord">
+            <h2>
+                New Record: <span id="newRecordValue"></span>
+            </h2>
+        </div>
+    </section>
+
+    <canvas></canvas>
+    <script type="module" src="assets/js/index.js"></script>
+</body>
+</html>
