@@ -4,9 +4,13 @@ Projeto baseado na playlist de vídeos do canal <b>Manual do Dev</b> do Youtube:
 - <a href="https://www.youtube.com/watch?v=RZ3D39UzqZs&list=PLdtmpu_1ITQLMiPRtuAZEN8BpRvMiFa_r" class="blank">Playlist Youtube</a> 
 
 Repositorio do projeto original:
-- <a href="https://github.com/manualdodev/space-invaders" class="blank">Repositório Github</a>  
+- <a href="https://github.com/manualdodev/space-invaders" class="blank">Repositório Github</a> 
+
+Link do jogo:
+- <a href="https://inaciofabricio.github.io/space-invader-js/" class="blank">Jogar</a> 
 
 ### Diferenças ao projeto inicial
+- Tutorial na Tela Inicial
 - High Score agora sendo guardado no localStorage;
 - Informação de New Record na tela de Game Over, quando o jogar conseguir bater record atual;
 - Comentário com uma explicação simples de cada função;
@@ -20,15 +24,15 @@ Repositorio do projeto original:
 ### Telas
 <div style="display: flex; flex-direction: column; gap: 25px;">
     <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
-        <img src="tela-inicial.jpg">
         <span>Tela Inicial</span>
+        <img src="tela-inicial.jpg">
     </div>
     <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
-        <img src="tela-do-jogo.jpg">
         <span>Tela do Jogo</span>
+        <img src="tela-do-jogo.jpg">
     </div>
     <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
-        <img src="tela-fim-de-jogo.jpg">
         <span>Tela de Fim de Jogo</span>
+        <img src="tela-fim-de-jogo.jpg">
     </div>
 </div>
